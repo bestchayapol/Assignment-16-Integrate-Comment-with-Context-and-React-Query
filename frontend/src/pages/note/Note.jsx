@@ -11,7 +11,7 @@ import GlobalContext from '../../share/context/GlobalContext';
 
 const Note = () => {
   const navigate = useNavigate();
-  const [user, setStatus] = useContext(GlobalContext);
+  const { user, setStatus } = useContext(GlobalContext);
   const [note, setNote] = useState({});
   const [openEdit, setOpenEdit] = useState(false);
   const { noteId } = useParams();
